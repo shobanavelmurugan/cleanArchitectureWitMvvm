@@ -8,7 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/ArchitecturerLayerExamples" />
+            <option value="$PROJECT_DIR$/CleanArchMvvmwithRoom" />
+            <option value="$PROJECT_DIR$/MvvmAndroid" />
+            <option value="$PROJECT_DIR$/MvvmRecyclerview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
