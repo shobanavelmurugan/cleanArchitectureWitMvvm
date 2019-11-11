@@ -1,2 +1,2 @@
-include ':ArchitecturerLayerExamples', ':CleanArchMvvmwithRoom', ':MvvmAndroid', ':MvvmRecyclerview'
+include ':ArchitecturerLayerExamples', ':CleanArchMvvmwithRoom', ':MvvmAndroid', ':MvvmRecycleview'
 rootProject.name='cleanArchitectureWitMvvm'

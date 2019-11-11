@@ -11,7 +11,7 @@
             <option value="$PROJECT_DIR$/ArchitecturerLayerExamples" />
             <option value="$PROJECT_DIR$/CleanArchMvvmwithRoom" />
             <option value="$PROJECT_DIR$/MvvmAndroid" />
-            <option value="$PROJECT_DIR$/MvvmRecyclerview" />
+            <option value="$PROJECT_DIR$/MvvmRecycleview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
