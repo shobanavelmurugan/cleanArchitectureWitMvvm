@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data class="NewsBinding">
+        <variable
+            name="newsview"
+            type="com.ibot.cyranosystems.mvvmrecycleview.viewmodel.NewsModel" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@{newsview.title}"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtTitleValue"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@{newsview.desc}"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtDescValue"/>
+</LinearLayout>
+</layout>

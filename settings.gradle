@@ -1,2 +1,2 @@
-include ':ArchitecturerLayerExamples', ':CleanArchMvvmwithRoom', ':MvvmAndroid', ':MvvmRecycleview'
+include ':ArchitecturerLayerExamples', ':CleanArchMvvmwithRoom', ':MvvmAndroid', ':MvvmListview', ':MvvmRecycleview', ':KotlinFirstApp'
 rootProject.name='cleanArchitectureWitMvvm'
