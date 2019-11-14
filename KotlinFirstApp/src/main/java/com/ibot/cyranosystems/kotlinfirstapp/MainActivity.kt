@@ -1,5 +1,6 @@
 package com.ibot.cyranosystems.kotlinfirstapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
                 showToast("Please enter password")
             }else{
                 showToast("Username is "+usernameval+ " user Password is "+userpassval)
+                val intent = Intent(this, SimpleListViewActivity::class.java)
+                startActivity(intent)
             }
         }
     }

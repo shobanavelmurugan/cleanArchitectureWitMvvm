@@ -23,14 +23,26 @@ class CustomAdapter(context:Context,newslist:ArrayList<News>) : BaseAdapter() {
     }
 
     override fun getView(position: Int, convertview: View?, parent: ViewGroup?): View? {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        var view :View
+        var viewholder:ViewHolder
+        if(convertview==null){
+            view=this.layoutInflater.inflate(R.layout.inner_layout,parent,false)
+            viewholder =ViewHolder(view)
+            view.tag=viewholder
+        }else{
+            view=convertview
+            viewholder=view.tag as ViewHolder
+        }
+        viewholder.title.text=newsList[position].title
+        viewholder.desc.text=newsList[position].desc
+        return view
     }
 
     override fun getItem(position: Int): Any? {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return newsList[position]
     }
-    override fun getItemId(p0: Int): Long {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun getItemId(position: Int): Long {
+        return position.toLong()
     }
 
     override fun getCount(): Int{
