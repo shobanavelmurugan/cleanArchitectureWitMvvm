@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ibot.cyranosystems.kotlinnavigationarchcomponents.ui.main.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/favsFragment"
+        android:name="com.ibot.cyranosystems.kotlinnavigationarchcomponents.ui.main.FavsFragment"
+        android:label="fragment_favs"
+        tools:layout="@layout/fragment_favs" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ibot.cyranosystems.kotlinnavigationarchcomponents.ui.main.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.ibot.cyranosystems.kotlinnavigationarchcomponents.ui.main.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/destination_photos" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_photos"
+        android:name="com.ibot.cyranosystems.kotlinnavigationarchcomponents.ui.main.PhotosFragment"
+        android:label="Photos"
+        tools:layout="@layout/fragment_photo">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="numOfPhotos"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>
